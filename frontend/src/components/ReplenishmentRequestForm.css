@@ -1,0 +1,131 @@
+/* Thiết lập cơ bản */
+:root {
+    --primary-color: #3b82f6; /* Xanh dương (Blue 500) */
+    --success-color: #16a34a; /* Xanh lá (Green 600) */
+    --danger-color: #dc2626; /* Đỏ (Red 600) */
+    --border-color: #d1d5db; /* Xám 300 */
+    --bg-light: #f3f4f6; /* Xám 100 */
+}
+
+/* 1. Container và Tiêu đề */
+.form-container {
+    padding: 1rem;
+    background-color: white;
+    border-radius: 0.5rem;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+}
+
+.form-title {
+    font-size: 1.25rem; /* text-xl */
+    font-weight: 600; /* font-semibold */
+    margin-bottom: 1rem;
+}
+
+/* 2. Layout Form */
+.form-layout {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem; /* space-y-4 */
+}
+
+.form-group {
+    margin-bottom: 0.5rem;
+}
+
+.form-label {
+    display: block;
+    font-weight: 500; /* font-medium */
+    margin-bottom: 0.25rem;
+}
+
+.item-list-label {
+    margin-bottom: 0.5rem;
+}
+
+/* 3. Input và Textarea */
+.input-textarea {
+    width: 100%;
+    border: 1px solid var(--border-color);
+    border-radius: 0.25rem;
+    padding: 0.5rem;
+    resize: vertical;
+}
+
+/* 4. Bảng Danh sách Mặt hàng */
+.items-table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid var(--border-color);
+}
+
+.table-header-row {
+    background-color: var(--bg-light);
+}
+
+.table-header-cell {
+    border: 1px solid var(--border-color);
+    padding: 0.5rem;
+    text-align: left;
+}
+
+.table-cell {
+    border: 1px solid var(--border-color);
+    padding: 0.5rem;
+    vertical-align: top;
+}
+
+.action-cell {
+    text-align: center;
+}
+
+.table-input {
+    width: 100%;
+    border: 1px solid var(--border-color);
+    border-radius: 0.25rem;
+    padding: 0.25rem;
+    box-sizing: border-box; /* Quan trọng để input không tràn ra khỏi ô */
+}
+
+/* 5. Nút Thao tác */
+.btn-add-row {
+    margin-top: 0.5rem;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 0.25rem 0.75rem;
+    border-radius: 0.25rem;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.15s;
+}
+
+.btn-add-row:hover {
+    background-color: #2563eb; /* Blue 600 */
+}
+
+.btn-remove-row {
+    color: var(--danger-color);
+    background: none;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    padding: 0;
+}
+
+.btn-remove-row:hover {
+    text-decoration: underline;
+}
+
+.btn-submit {
+    background-color: var(--success-color);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.15s;
+    font-weight: 500;
+}
+
+.btn-submit:hover {
+    background-color: #15803d; /* Green 700 */
+}
